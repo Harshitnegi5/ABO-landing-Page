@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<!-- saved from url=(0027)https://quantumstretch.com/ -->
+<html lang="en-US" class="js" style="overscroll-behavior: none; scroll-behavior: auto;"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://quantumstretch.com/wp-content/themes/quantum/assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://quantumstretch.com/wp-content/themes/quantum/assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://quantumstretch.com/wp-content/themes/quantum/assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://quantumstretch.com/wp-content/themes/quantum/assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="https://quantumstretch.com/wp-content/themes/quantum/assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#011317">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- fonts -->
+    <link data-minify="1" rel="stylesheet" href="./Quantum - Revolution in Packaging Industry_files/dul1mrk.css">
+
+    <!-- script for preloader -->
+    <script src="./Quantum - Revolution in Packaging Industry_files/progressbar.min.js.download"></script>
+
+
+    <style>
+        html {
+            background-color: #011317;
+        }
+
+        body {
+            opacity: 0;
+            visibility: hidden;
+            overflow: hidden;
+        }
+
+        body.preloaded {
+            transition: opacity 600ms ease, visibility 600ms ease;
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .document-wrap {
+            transition: opacity 600ms ease, visibility 600ms ease;
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        body.loaded {
+            overflow: visible;
+        }
+
+        body.loaded .document-wrap {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        body.loaded .preloader-wrap {
+            
+        }
+
+        /* preloader wrap */
+        .preloader-wrap {
+            z-index: 600;
+            position: fixed;
+            display: flex;
+            align-items: center;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .preloader-wrap .big-quantum {
+            display: block;
+            pointer-events: none;
+            transform: translate(-50%, 0);
+            position: absolute;
+            width: calc(100% - 0.32rem);
+            max-width: 17rem;
+            height: 3.3rem;
+            left: 50%;
+            bottom: 0.16rem;
+            overflow: hidden;
+            -webkit-mask-image: url("https://quantumstretch.com/wp-content/themes/quantum/assets/img/svg/preloader-quantum.svg");
+            mask-image: url("https://quantumstretch.com/wp-content/themes/quantum/assets/img/svg/preloader-quantum.svg");
+            mask-size: 100%;
+            -webkit-mask-size: 100%;
+        }
+
+        @media screen and (max-width: 768px) and (orientation: portrait) {
+            .preloader-wrap .big-quantum {
+                bottom: 0.08rem;
+            }
+        }
+
+        .preloader-wrap .big-quantum::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 1rem;
+            height: 100%;
+            background-color: rgba(255, 255, 255, 0.95);
+            animation: shine 3s ease-in-out infinite;
+            filter: blur(0.5rem);
+        }
+
+        @media screen and (max-width: 768px) and (orientation: portrait) {
+            .preloader-wrap .big-quantum {
+                height: 0.9rem;
+            }
+
+            .preloader-wrap .big-quantum::after {
+                width: 1.5rem;
+                background-color: rgba(255, 255, 255, 1);
+            }
+
+            @keyframes shine {
+                0% {
+                    transform: translate(-1rem, 0) skew(-30deg);
+                }
+                100% {
+                    transform: translate(5rem, 0) skew(-30deg);
+                }
+            }
+        }
+
+        @keyframes shine {
+            0% {
+                transform: translate(-2rem, 0) skew(-30deg);
+            }
+            100% {
+                transform: translate(16rem, 0) skew(-30deg);
+            }
+        }
+
+        .preloader-wrap .logo-title {
+            display: block;
+            width: 100%;
+        }
+
+        .preloader-wrap .container {
+            position: relative;
+            padding-top: 1rem;
+            width: 100%;
+            max-width: 1.5rem;
+            margin: auto;
+        }
+
+
+        .preloader-wrap .container .logo {
+            display: block;
+            width: 0.5rem;
+            margin: auto;
+            margin-bottom: 0.16rem;
+        }
+
+        .preloader-wrap .text {
+            font-family: neue-haas-grotesk-display, sans-serif;
+            font-size: 0.12rem;
+            color: #fff;
+            line-height: 1.6em;
+            text-transform: uppercase;
+            letter-spacing: 0.04rem;
+            min-height: 0.4rem;
+        }
+
+        .preloader-wrap .circle-wrap {
+            display: block;
+            position: absolute;
+            transform: translate(-50%, 0);
+            width: 0.8rem;
+            top: 0;
+            left: 50%;
+        }
+
+        .preloader-wrap .number {
+            display: block;
+            position: absolute;
+            transform: translate(-50%, -50%);
+            top: 50%;
+            left: 50%;
+            font-size: 0.24rem;
+            color: #d3b166;
+        }
+
+        .preloader-wrap .mouse-wrap {
+            pointer-events: none;
+            cursor: pointer;
+            display: none;
+            align-items: center;
+            justify-content: center;
+            transform: translate(-50%, 0);
+            position: absolute;
+            top: -0.36rem;
+            left: 50%;
+            padding: 0.08rem;
+            width: 100%;
+            aspect-ratio: 1 / 1;
+            margin: auto;
+            opacity: 0;
+        }
+
+        .preloader-wrap .mouse-wrap:hover .button-wrap {
+            transform: scale(1.25);
+            transition: transform 400ms ease-out;
+        }
+
+        .preloader-wrap .button-wrap {
+            pointer-events: none;
+            display: block;
+            position: relative;
+            transition: transform 200ms ease-out;
+            border-radius: 50%;
+            padding: 0.08rem;
+            border: 1px solid #d3b166;
+            width: min-content;
+            aspect-ratio: 1 / 1;
+            margin: auto;
+        }
+
+        .preloader-wrap .button-wrap .btn {
+            display: block;
+            pointer-events: none;
+            width: 0.54rem;
+        }
+    </style>
+
+    <!-- preloader script -->
+    <script type="text/javascript">
+        window.addEventListener("DOMContentLoaded", function () {
+            const isMobile = window.innerWidth <= 768;
+
+            const container = document.querySelector(".preloader-wrap .container");
+            const bigQuantum = document.querySelector(".preloader-wrap .big-quantum");
+            const textSpan = document.querySelector(".preloader-wrap .text span");
+
+            const bqAnim = gsap.timeline({paused: true});
+            bqAnim.add("start");
+            bqAnim.from(bigQuantum, {
+                height: isMobile ? "0.6rem" : "2rem",
+                duration: 1.4,
+                ease: "power4.inOut",
+            }, "start");
+            bqAnim.to(container, {
+                y: "-30%",
+                duration: 1.4,
+                ease: "power4.inOut",
+            }, "start");
+            bqAnim.to(textSpan, {
+                opacity: 0,
+                duration: 1.4,
+                ease: "power4.inOut",
+                repeat: 1,
+                yoyo: true,
+                onRepeat: function () {
+                    textSpan.textContent = "Enter";
+                }
+            }, "start");
+
+
+
+            /* setup circle */
+            const circleWrap = document.querySelector(".preloader-wrap .circle-wrap");
+            const progress = new ProgressBar.Circle(circleWrap, {
+                strokeWidth: 2,
+                easing: 'easeIn',
+                color: '#B2883E',
+                trailColor: 'transparent',
+                trailWidth: 1,
+            });
+
+            /* count up */
+            const numberEl = document.querySelector(".preloader-wrap .number");
+
+            let loaded = false;
+            let currentPercentage = 0;
+            const limit = 71;
+            let countTimes = 5;
+
+            function count () {
+                let rnd;
+                if (currentPercentage >= 50 && currentPercentage < limit) {
+                    rnd = Math.floor(Math.random() * 2) + 1;  // slow count 1-2
+                }
+                else if (currentPercentage >= limit) {
+                    rnd = Math.random() * 1.5;  // ultra slow count
+                }
+                else {
+                    rnd = Math.floor(Math.random() * 8) + 1;  // normal count 1-8
+                }
+
+                currentPercentage += parseInt(rnd);
+                if (currentPercentage >= 99) {
+                    currentPercentage = 99;
+                }
+                numberEl.textContent = `${currentPercentage}%`;
+                progress.animate(currentPercentage / 100, {
+                    duration: 100
+                });
+
+                if (loaded && countTimes <= 0) {
+                    numberEl.textContent = `${100}%`;
+                    progress.animate(1, {
+                        duration: 300
+                    });
+
+                    bqAnim.play();
+
+                    setTimeout(() => {
+                        loadHandle();
+                    }, 500);
+                    return;
+                }
+                else {
+                    setTimeout(count, 200);
+                }
+
+                /* check for loaded */
+                if (window.loaded && window.loaded === true) {
+                    loaded = true;
+                }
+
+                countTimes--;
+            }
+
+            count();
+
+
+            /* button hover effect */
+            function initMouseMove () {
+                const buttonWrap = document.querySelector(".preloader-wrap .mouse-wrap");
+                const button = buttonWrap.querySelector(".btn");
+    
+                const distance = buttonWrap.clientWidth * 0.15;
+                const normalize = (_val, _min, _max) => {
+                    return (_val - _min) / (_max - _min);
+                }
+    
+                let normalizedX, normalizedY;
+                const moveControll = (e) => {
+                    const width = e.target.clientWidth;
+                    const height = e.target.clientHeight;
+    
+                    const posX = e.offsetX;
+                    const posY = e.offsetY;
+    
+                    const x = (width / 2) - posX;
+                    const y = (height / 2) - posY;
+    
+                    normalizedX = distance * (-(normalize(x, 0, width / 2)));
+                    normalizedY = distance * (-(normalize(y, 0, height / 2)));
+    
+                    gsap.to(button, {
+                        x: normalizedX,
+                        y: normalizedY,
+                        duration: 0.3,
+                        ease: 'none'
+                    });
+                };
+    
+                buttonWrap.onmousemove = (e) => {
+                    moveControll(e);
+                };
+    
+                buttonWrap.onmouseleave = () => {
+                    gsap.to(button, {
+                        x: 0,
+                        y: 0,
+                        duration: 0.6,
+                        ease: 'power4.out'
+                    });
+                };
+            }
+
+
+            /* loaded function */
+            function loadHandle () {
+                //console.log("Loaded!");
+                
+                /* click expirience */
+                const preloader = document.querySelector(".preloader-wrap");
+                const circleWrap = document.querySelector(".preloader-wrap .circle-wrap");
+                const clickBtn = document.querySelector(".preloader-wrap .mouse-wrap");
+
+                gsap.to(circleWrap, {
+                    opacity: 0,
+                    scale: 0.75,
+                    pointerEvents: "none",
+                    ease: "expo.out",
+                    duration: 1
+                });
+                gsap.to(clickBtn, {
+                    opacity: 1,
+                    display: "flex",
+                    pointerEvents: "all",
+                    delay: 0.75,
+                    onComplete: function () {
+                        if (window.innerWidth >= 768) {
+                            initMouseMove();
+                        }
+                    }
+                });
+                
+                clickBtn.addEventListener("click", () => {
+                    window.playClickSound();
+                    window.playAmbient();
+
+                    const timeline = gsap.timeline({
+                        onComplete: () => {
+                            document.body.classList.add("loaded");
+
+                            window.init3dIntro();
+                            window.siteBorderAnim.play();
+                        }
+                    });
+
+                    timeline.add("start");
+                    timeline.to(preloader, {
+                        opacity: 0,
+                        display: "none",
+                        pointerEvents: "none",
+                        duration: 0.5,
+                        ease: "expo.inOut",
+                    }, "start");
+                }, { once: true });
+            }
+
+            document.body.classList.add("preloaded");
+        });
+    </script>
+
+    <script type="text/javascript">
+        let base_url = 'https://quantumstretch.com/wp-content/themes/quantum/';
+    </script>
+
+    <script type="text/javascript">
+        var ADMIN_BAR_VISIBLE = false;
+        var admin_url = 'https://quantumstretch.com/wp-admin/admin-ajax.php';
+    </script>
+    
+    <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+<link rel="alternate" hreflang="hr" href="https://quantumstretch.hr/">
+<link rel="alternate" hreflang="en" href="https://quantumstretch.com/">
+<link rel="alternate" hreflang="x-default" href="https://quantumstretch.com/">
+
+	<!-- This site is optimized with the Yoast SEO plugin v21.3 - https://yoast.com/wordpress/plugins/seo/ -->
+	<title>Quantum - Revolution in Packaging Industry</title>
+	<meta name="description" content="Discover Quantum, revolutionizing the packaging industry with unparalleled elasticity and durability. Where traditional wraps falter, Quantum stands firm.">
+	<link rel="canonical" href="https://quantumstretch.com/">
+	<meta property="og:locale" content="en_US">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="Quantum - Revolution in Packaging Industry">
+	<meta property="og:description" content="Discover Quantum, revolutionizing the packaging industry with unparalleled elasticity and durability. Where traditional wraps falter, Quantum stands firm.">
+	<meta property="og:url" content="https://quantumstretch.com/">
+	<meta property="og:site_name" content="Quantum">
+	<meta property="article:modified_time" content="2023-10-06T09:33:53+00:00">
+	<meta property="og:image" content="https://quantumstretch.com/wp-content/uploads/2023/09/quantum.png">
+	<meta property="og:image:width" content="1200">
+	<meta property="og:image:height" content="675">
+	<meta property="og:image:type" content="image/png">
+	<meta name="twitter:card" content="summary_large_image">
+	<script type="application/ld+json" class="yoast-schema-graph">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://quantumstretch.com/","url":"https://quantumstretch.com/","name":"Quantum - Revolution in Packaging Industry","isPartOf":{"@id":"https://quantumstretch.com/#website"},"datePublished":"2023-08-10T09:33:56+00:00","dateModified":"2023-10-06T09:33:53+00:00","description":"Discover Quantum, revolutionizing the packaging industry with unparalleled elasticity and durability. Where traditional wraps falter, Quantum stands firm.","breadcrumb":{"@id":"https://quantumstretch.com/#breadcrumb"},"inLanguage":"en-US","potentialAction":[{"@type":"ReadAction","target":["https://quantumstretch.com/"]}]},{"@type":"BreadcrumbList","@id":"https://quantumstretch.com/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home"}]},{"@type":"WebSite","@id":"https://quantumstretch.com/#website","url":"https://quantumstretch.com/","name":"Quantum","description":"Revolution in Packaging Industry","potentialAction":[{"@type":"SearchAction","target":{"@type":"EntryPoint","urlTemplate":"https://quantumstretch.com/?s={search_term_string}"},"query-input":"required name=search_term_string"}],"inLanguage":"en-US"}]}</script>
+	<!-- / Yoast SEO plugin. -->
+
+
+<link rel="manifest" href="https://quantumstretch.com/pwa-manifest.json">
+<link rel="apple-touch-screenshots-precomposed" sizes="512x512" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-icon-precomposed" sizes="192x192" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-logo.png">
+<link rel="dns-prefetch" href="https://code.jquery.com/">
+
+<style id="classic-theme-styles-inline-css">
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id="global-styles-inline-css">
+body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body .is-layout-grid{display: grid;}body .is-layout-grid > *{margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+.wp-block-navigation a:where(:not(.wp-element-button)){color: inherit;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+.wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel="stylesheet" id="redneck-style-css" href="./Quantum - Revolution in Packaging Industry_files/style.min.css" media="">
+<link rel="stylesheet" id="pwaforwp-style-css" href="./Quantum - Revolution in Packaging Industry_files/pwaforwp-main.min.css" media="all">
+<script id="wpml-cookie-js-extra">
+var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"\/"}};
+var wpml_cookies = {"wp-wpml_current_language":{"value":"en","expires":1,"path":"\/"}};
+</script>
+<script data-minify="1" src="./Quantum - Revolution in Packaging Industry_files/language-cookie.js.download" id="wpml-cookie-js"></script>
+<script id="wpml-xdomain-data-js-extra">
+var wpml_xdomain_data = {"css_selector":"wpml-ls-item","ajax_url":"https:\/\/quantumstretch.com\/wp-admin\/admin-ajax.php","current_lang":"en","_nonce":"82876f32b7"};
+</script>
+<script data-minify="1" src="./Quantum - Revolution in Packaging Industry_files/xdomain-data.js.download" id="wpml-xdomain-data-js"></script>
+<link rel="https://api.w.org/" href="https://quantumstretch.com/wp-json/"><link rel="alternate" type="application/json" href="https://quantumstretch.com/wp-json/wp/v2/pages/12"><link rel="alternate" type="application/json+oembed" href="https://quantumstretch.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fquantumstretch.com%2F">
+<link rel="alternate" type="text/xml+oembed" href="https://quantumstretch.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fquantumstretch.com%2F&amp;format=xml">
+<meta name="generator" content="WPML ver:4.6.6 stt:22,1;">
+<meta name="pwaforwp" content="wordpress-plugin">
+        <meta name="theme-color" content="rgb(1,19,23)">
+        <meta name="apple-mobile-web-app-title" content="Quantum">
+        <meta name="application-name" content="Quantum">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-touch-fullscreen" content="yes">
+<link rel="apple-touch-icon" sizes="192x192" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-logo.png">
+<link rel="apple-touch-icon" sizes="512x512" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 736px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 375px) and (device-height: 667px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 414px) and (device-height: 896px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 834px) and (device-height: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 768px) and (device-height: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 390px) and (device-height: 844px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 844px) and (device-height: 390px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 926px) and (device-height: 428px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 428px) and (device-height: 926px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 852px) and (device-height: 393px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 393px) and (device-height: 852px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 932px) and (device-height: 430px) and (-webkit-device-pixel-ratio: 3) and (orientation: landscape)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+<link rel="apple-touch-startup-image" media="screen and (device-width: 430px) and (device-height: 932px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait)" href="https://quantumstretch.com/wp-content/uploads/2023/10/quantum-app.jpg">
+	
+	<!-- Google tag (gtag.js) -->
+	<script async="" src="./Quantum - Revolution in Packaging Industry_files/js"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-Z5FXPXNLMS', { 'anonymize_ip': true });
+	</script>
+	
+</head>
+
+<body class="home page-template page-template-tpl-home page-template-tpl-home-php page page-id-12 singular preloaded loaded" cz-shortcut-listen="true" style="height: 13472px; overscroll-behavior: none; scroll-behavior: auto;"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="position: absolute; width: 0; height: 0" aria-hidden="true" id="__SVG_SPRITE_NODE__"><symbol xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14 17" fill="none" id="arrow">
+<path d="M0 17L8.51229 8.5L0 0H5.48771L14 8.5L5.48771 17H0Z" fill="#343B3E"></path>
+</symbol></svg>
+
+    <!-- preloader -->
+    <div class="preloader-wrap" style="pointer-events: none; display: none; opacity: 0;">
+        <div class="container" style="translate: none; rotate: none; scale: none; transform: translate(0px, -30%);">
+            <div class="circle-wrap" style="translate: none; rotate: none; scale: none; pointer-events: none; transform: translate(-50%, 0%) scale(0.75, 0.75); opacity: 0;">
+                <div class="number fw-500">100%</div>
+            <svg viewBox="0 0 100 100" style="display: block; width: 100%;"><path d="M 50,50 m 0,-49 a 49,49 0 1 1 0,98 a 49,49 0 1 1 0,-98" stroke="transparent" stroke-width="1" fill-opacity="0"></path><path d="M 50,50 m 0,-49 a 49,49 0 1 1 0,98 a 49,49 0 1 1 0,-98" stroke="#B2883E" stroke-width="2" fill-opacity="0" style="stroke-dasharray: 307.919, 307.919; stroke-dashoffset: 0;"></path></svg></div>
+
+            <div class="text fw-500"><span style="opacity: 1;">Enter</span></div>
+
+            <div class="mouse-wrap" style="pointer-events: all; display: flex; opacity: 1;">
+                <div class="button-wrap">
+                    
+                <svg class="btn" viewBox="0 0 55 54" fill="none" xmlns="http://www.w3.org/2000/svg" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                        <rect x="0.5" width="54" height="54" rx="27" fill="#D3B166"></rect>
+                        <path d="M22.5 32L32.5 22M32.5 22H22.5M32.5 22V32" stroke="#020F13" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                    </svg></div>
+            </div>
+        </div>
+
+        <!-- big quantum wrap -->
+        <div class="big-quantum" style="height: 278.775px;">
+            <svg class="logo-title" viewBox="0 0 1408 381" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M549.195 265.096H523.305V242.403H522.666C510.84 258.384 496.777 268.932 472.805 268.932C438.925 268.932 417.191 248.476 417.191 214.276V99.8513H443.08V213.637C443.08 235.052 456.824 247.517 480.156 247.517C506.365 247.517 523.305 227.7 523.305 201.491V99.8513H549.195V265.096ZM713.97 266.694C697.03 266.694 688.081 259.023 685.524 242.083H685.204C675.296 254.868 658.356 268.292 630.229 268.292C598.906 268.292 574.295 253.59 574.295 222.267C574.295 183.273 604.979 175.282 646.21 168.89C669.543 165.374 685.843 163.137 685.843 145.238C685.843 126.7 672.419 116.152 648.767 116.152C621.919 116.152 608.495 127.658 607.536 152.589H582.605C583.564 120.627 604.659 96.6551 648.448 96.6551C683.606 96.6551 709.495 109.76 709.495 149.073V227.7C709.495 241.124 712.692 248.476 727.075 245.28H728.033V264.137C724.837 265.416 720.682 266.694 713.97 266.694ZM635.982 248.476C670.501 248.476 686.163 223.226 686.163 204.048V175.921C677.533 181.355 662.511 185.51 648.448 188.067C622.558 192.861 601.783 197.336 601.783 221.627C601.783 243.681 619.042 248.476 635.982 248.476ZM773.025 99.8513V121.586H773.665C785.491 105.924 802.111 96.0158 826.083 96.0158C860.602 96.0158 881.697 114.874 881.697 149.073V265.096H855.808V151.311C855.808 129.896 841.744 117.75 818.412 117.75C792.203 117.75 773.025 136.288 773.025 163.456V265.096H747.136V99.8513H773.025ZM902.33 120.946V99.8513H926.302V47.7529H952.191V99.8513H984.153V120.946H952.191V228.34C952.191 239.846 958.264 243.681 968.812 243.681C973.926 243.681 979.679 242.403 982.555 241.444H983.514V263.818C977.441 265.096 970.41 266.055 962.739 266.055C941.644 266.055 926.302 257.425 926.302 234.093V120.946H902.33ZM1141.93 265.096H1116.04V242.403H1115.4C1103.58 258.384 1089.51 268.932 1065.54 268.932C1031.66 268.932 1009.93 248.476 1009.93 214.276V99.8513H1035.82V213.637C1035.82 235.052 1049.56 247.517 1072.89 247.517C1099.1 247.517 1116.04 227.7 1116.04 201.491V99.8513H1141.93V265.096ZM1176.94 265.096V99.8513H1202.83V123.503H1203.47C1213.7 107.522 1231.28 96.0158 1252.05 96.0158C1272.19 96.0158 1288.17 106.244 1295.2 125.421H1295.84C1306.39 106.563 1326.2 96.0158 1346.34 96.0158C1375.75 96.0158 1396.52 114.874 1396.52 149.073V265.096H1370.63V150.352C1370.63 129.896 1356.89 117.75 1340.27 117.75C1318.85 117.75 1299.68 136.288 1299.68 162.178V265.096H1273.79V150.352C1273.79 129.896 1262.28 117.75 1245.34 117.75C1225.2 117.75 1202.83 136.288 1202.83 162.178V265.096H1176.94Z" fill="url(#paint0_linear_954_783)"></path>
+                <path d="M380.92 301.007V380.92H189.796C188.018 380.92 186.253 380.893 184.487 380.84C82.1168 378.03 0 293.868 0 190.46C0 87.0522 84.9704 0 189.796 0C294.622 0 379.593 85.2675 379.593 190.46C379.593 219.002 373.328 246.066 362.126 270.373H265.795C286.818 250.235 299.958 221.866 299.958 190.46C299.958 129.499 250.544 79.9133 189.796 79.9133C129.048 79.9133 79.6348 129.499 79.6348 190.46C79.6348 251.42 128.332 300.247 188.469 300.967V301.007H380.92Z" fill="url(#paint1_linear_954_783)"></path>
+                <defs>
+                    <lineargradient id="paint0_linear_954_783" x1="655.24" y1="89.8109" x2="668.989" y2="266.537" gradientUnits="userSpaceOnUse">
+                        <stop stop-color="#B2883E"></stop>
+                        <stop offset="0.132936" stop-color="#E0B54D"></stop>
+                        <stop offset="0.186698" stop-color="#ECD799"></stop>
+                        <stop offset="0.325922" stop-color="#AB8C40"></stop>
+                        <stop offset="0.558973" stop-color="#E0B54D"></stop>
+                        <stop offset="0.682701" stop-color="#C29743"></stop>
+                        <stop offset="1" stop-color="#FEF2BD"></stop>
+                    </lineargradient>
+                    <lineargradient id="paint1_linear_954_783" x1="95.764" y1="55.3054" x2="228.973" y2="366.329" gradientUnits="userSpaceOnUse">
+                        <stop offset="0.186698" stop-color="#AB8C40"></stop>
+                        <stop offset="0.358973" stop-color="#E0B54D"></stop>
+                        <stop offset="1" stop-color="#FEF2BD"></stop>
+                    </lineargradient>
+                </defs>
+            </svg>
+        </div>
+    </div>
+
+    <div class="document-wrap">
+        <!-- site border -->
+        <div class="site-border" data-method="siteBorderAnim">
+            <div class="site-logo" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                <svg class="icon" viewBox="0 0 41 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M40.5 31.6084V40H20.4303C20.2436 40 20.0582 39.9972 19.8728 39.9916C9.123 39.6965 0.5 30.8587 0.5 20C0.5 9.14126 9.42265 0 20.4303 0C31.438 0 40.3606 8.95385 40.3606 20C40.3606 22.9972 39.7028 25.8392 38.5265 28.3916H28.4108C30.6185 26.2769 31.9983 23.2979 31.9983 20C31.9983 13.5986 26.8094 8.39161 20.4303 8.39161C14.0512 8.39161 8.86237 13.5986 8.86237 20C8.86237 26.4014 13.976 31.5287 20.2909 31.6042V31.6084H40.5Z" fill="url(#paint1_linear_834_516)"></path>
+                    <defs>
+                        <lineargradient id="paint1_linear_834_516" x1="10.5561" y1="5.80756" x2="24.5442" y2="38.4678" gradientUnits="userSpaceOnUse">
+                            <stop stop-color="#B2883E"></stop>
+                            <stop offset="0.132936" stop-color="#E0B54D"></stop>
+                            <stop offset="0.186698" stop-color="#ECD799"></stop>
+                            <stop offset="0.325922" stop-color="#AB8C40"></stop>
+                            <stop offset="0.558973" stop-color="#E0B54D"></stop>
+                            <stop offset="0.682701" stop-color="#C29743"></stop>
+                            <stop offset="1" stop-color="#FEF2BD"></stop>
+                        </lineargradient>
+                    </defs>
+                </svg>
+            </div>
+
+            <div class="sound-button-container" data-method="magneticButton">
+                <a href="https://quantumstretch.com/#" class="global-sound-button btn" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px);">
+                    <div style="translate: none; rotate: none; scale: none; transform: scale(1, 0.1);"></div><div style="translate: none; rotate: none; scale: none; transform: scale(1, 0.3);"></div><div style="translate: none; rotate: none; scale: none; transform: scale(1, 0.5);"></div><div style="translate: none; rotate: none; scale: none; transform: scale(1, 0.7);"></div><div style="translate: none; rotate: none; scale: none; transform: scale(1, 0.9);"></div>
+                </a>
+            </div>
+
+                        <div class="top-right">
+                <div class="anchors" data-method="sectionAnchors">
+                    <a href="https://quantumstretch.com/#performanceAnchor" class="link block anchor" data-text="Performance" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><span>Performance</span></a>
+                    <a href="https://quantumstretch.com/#technologyAnchor" class="link block anchor" data-text="New Technology" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><span>New Technology</span></a>
+                    <a href="https://quantumstretch.com/#specificationAnchor" class="link block anchor" data-text="Specification" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><span>Specification</span></a>
+                    <a href="https://quantumstretch.com/#contactAnchor" class="link block anchor" data-text="Contact" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><span>Contact</span></a>
+                                        <a href="https://quantumstretch.hr/" class="link block" data-text="hr" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;"><span>hr</span></a>
+                                    </div>
+                                    <a href="https://quantumstretch.hr/" class="mobile-lang" data-text="hr">hr</a>
+                    
+                            </div>
+
+
+            
+            <div class="bottom-left">
+                <!-- sound experience -->
+                                <div class="sound-experience">
+                    <div class="text fw-500" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0px); opacity: 1;">
+                        <div class="icon"></div>
+                        Enjoy this experience better by using your headphones or turning on your speakers                    </div>
+                </div>
+                
+
+
+                <!-- switch navigation -->
+                <div class="switch-navigation">
+                    <!-- dot frame -->
+                    <div class="dot-frame-wrap">
+                        <div class="dot-frame">
+                            <div class="icon-wrap playable">
+                                <svg class="icon" viewBox="0 0 26 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1C8.21053 1 13.2281 8 13.2281 8C13.2281 8 17.7895 1 26 1" stroke="#ECFFFF" stroke-width="2" stroke-dasharray="1.13 0.57"></path>
+                                </svg>
+                                <svg class="play-icon" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 2.12037C0 1.14921 0 0.663626 0.20249 0.395955C0.378894 0.162766 0.648522 0.0184654 0.940398 0.00103806C1.27544 -0.0189663 1.67946 0.250386 2.48752 0.78909L13.0031 7.79946C13.6708 8.24459 14.0046 8.46715 14.1209 8.74767C14.2227 8.99293 14.2227 9.26856 14.1209 9.51381C14.0046 9.79434 13.6708 10.0169 13.0031 10.462L2.48752 17.4724C1.67946 18.0111 1.27544 18.2805 0.940398 18.2604C0.648522 18.243 0.378894 18.0987 0.20249 17.8655C0 17.5979 0 17.1123 0 16.1411V2.12037Z" fill="#D3B166"></path>
+                                </svg>
+                                <svg class="pause-icon" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 8.74229e-08C3.60457 3.91406e-08 4.5 0.89543 4.5 2L4.5 17C4.5 18.1046 3.60457 19 2.5 19C1.39543 19 0.500001 18.1046 0.500001 17L0.5 2C0.5 0.895431 1.39543 1.35705e-07 2.5 8.74229e-08Z" fill="#D3B166"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 8.74229e-08C10.6046 3.91406e-08 11.5 0.89543 11.5 2L11.5 17C11.5 18.1046 10.6046 19 9.5 19C8.39543 19 7.5 18.1046 7.5 17L7.5 2C7.5 0.895431 8.39543 1.35705e-07 9.5 8.74229e-08Z" fill="#D3B166"></path>
+                                </svg>
+                            </div>
+    
+                            <div class="wave-wrap">
+                                <!-- texts -->
+                                <div class="ww-inner">
+                                    <div class="w-title fw-500">Puncture resistance</div>
+                                </div>
+                                <!-- wave -->
+                                <div class="wave">
+                                    <div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.1013);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.8241);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.3601);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.1873);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.7632);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.3296);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.7038);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.2457);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.6465);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.5775);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.9908);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0132);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0866);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0019);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.5147);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- dot frame -->
+                    <div class="dot-frame-wrap">
+                        <div class="dot-frame" style="border-color: transparent;">
+                            <div class="icon-wrap">
+                                <svg class="icon plane" viewBox="0 0 22 2" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 1C0 1 3.85965 1 11.193 1C18.5263 1 22 1 22 1" stroke="#ECFFFF" stroke-width="2" stroke-dasharray="1 0.5"></path>
+                                </svg>
+                                <svg class="play-icon" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 2.12037C0 1.14921 0 0.663626 0.20249 0.395955C0.378894 0.162766 0.648522 0.0184654 0.940398 0.00103806C1.27544 -0.0189663 1.67946 0.250386 2.48752 0.78909L13.0031 7.79946C13.6708 8.24459 14.0046 8.46715 14.1209 8.74767C14.2227 8.99293 14.2227 9.26856 14.1209 9.51381C14.0046 9.79434 13.6708 10.0169 13.0031 10.462L2.48752 17.4724C1.67946 18.0111 1.27544 18.2805 0.940398 18.2604C0.648522 18.243 0.378894 18.0987 0.20249 17.8655C0 17.5979 0 17.1123 0 16.1411V2.12037Z" fill="#D3B166"></path>
+                                </svg>
+                                <svg class="pause-icon" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 8.74229e-08C3.60457 3.91406e-08 4.5 0.89543 4.5 2L4.5 17C4.5 18.1046 3.60457 19 2.5 19C1.39543 19 0.500001 18.1046 0.500001 17L0.5 2C0.5 0.895431 1.39543 1.35705e-07 2.5 8.74229e-08Z" fill="#D3B166"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 8.74229e-08C10.6046 3.91406e-08 11.5 0.89543 11.5 2L11.5 17C11.5 18.1046 10.6046 19 9.5 19C8.39543 19 7.5 18.1046 7.5 17L7.5 2C7.5 0.895431 8.39543 1.35705e-07 9.5 8.74229e-08Z" fill="#D3B166"></path>
+                                </svg>
+                            </div>
+    
+                            <div class="wave-wrap" style="width: 0px;">
+                                <!-- texts -->
+                                <div class="ww-inner">
+                                    <div class="w-title fw-500">Stretch up</div>
+                                </div>
+                                <!-- wave -->
+                                <div class="wave">
+                                    <div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.6588);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.231);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0006);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0897);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0237);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.1354);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.3088);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.8814);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.666);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.1063);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.4139);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.5569);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.8148);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.9939);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.2887);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- dot frame -->
+                    <div class="dot-frame-wrap">
+                        <div class="dot-frame" style="border-color: transparent;">
+                            <div class="icon-wrap">
+                                <svg class="icon sphere" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="1" width="20" height="20" rx="9" stroke="#ECFFFF" stroke-width="2" stroke-dasharray="1 0.5"></rect>
+                                </svg>
+                                <svg class="play-icon" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 2.12037C0 1.14921 0 0.663626 0.20249 0.395955C0.378894 0.162766 0.648522 0.0184654 0.940398 0.00103806C1.27544 -0.0189663 1.67946 0.250386 2.48752 0.78909L13.0031 7.79946C13.6708 8.24459 14.0046 8.46715 14.1209 8.74767C14.2227 8.99293 14.2227 9.26856 14.1209 9.51381C14.0046 9.79434 13.6708 10.0169 13.0031 10.462L2.48752 17.4724C1.67946 18.0111 1.27544 18.2805 0.940398 18.2604C0.648522 18.243 0.378894 18.0987 0.20249 17.8655C0 17.5979 0 17.1123 0 16.1411V2.12037Z" fill="#D3B166"></path>
+                                </svg>
+                                <svg class="pause-icon" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 8.74229e-08C3.60457 3.91406e-08 4.5 0.89543 4.5 2L4.5 17C4.5 18.1046 3.60457 19 2.5 19C1.39543 19 0.500001 18.1046 0.500001 17L0.5 2C0.5 0.895431 1.39543 1.35705e-07 2.5 8.74229e-08Z" fill="#D3B166"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 8.74229e-08C10.6046 3.91406e-08 11.5 0.89543 11.5 2L11.5 17C11.5 18.1046 10.6046 19 9.5 19C8.39543 19 7.5 18.1046 7.5 17L7.5 2C7.5 0.895431 8.39543 1.35705e-07 9.5 8.74229e-08Z" fill="#D3B166"></path>
+                                </svg>
+                            </div>
+    
+                            <div class="wave-wrap" style="width: 0px;">
+                                <!-- texts -->
+                                <div class="ww-inner">
+                                    <div class="w-title fw-500">Cling increase</div>
+                                </div>
+                                <!-- wave -->
+                                <div class="wave">
+                                    <div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0019);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.3609);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0337);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.4029);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.2349);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.8888);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.5084);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.6575);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.8668);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.5869);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.6008);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.5092);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.368);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.5306);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.1425);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- dot frame -->
+                    <div class="dot-frame-wrap">
+                        <div class="dot-frame" style="border-color: transparent;">
+                            <div class="icon-wrap">
+                                <svg class="icon cube" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="1" y="1" width="16" height="16" stroke="#ECFFFF" stroke-width="2" stroke-dasharray="1 0.5"></rect>
+                                </svg>
+                                <svg class="play-icon" viewBox="0 0 15 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M0 2.12037C0 1.14921 0 0.663626 0.20249 0.395955C0.378894 0.162766 0.648522 0.0184654 0.940398 0.00103806C1.27544 -0.0189663 1.67946 0.250386 2.48752 0.78909L13.0031 7.79946C13.6708 8.24459 14.0046 8.46715 14.1209 8.74767C14.2227 8.99293 14.2227 9.26856 14.1209 9.51381C14.0046 9.79434 13.6708 10.0169 13.0031 10.462L2.48752 17.4724C1.67946 18.0111 1.27544 18.2805 0.940398 18.2604C0.648522 18.243 0.378894 18.0987 0.20249 17.8655C0 17.5979 0 17.1123 0 16.1411V2.12037Z" fill="#D3B166"></path>
+                                </svg>
+                                <svg class="pause-icon" viewBox="0 0 12 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M2.5 8.74229e-08C3.60457 3.91406e-08 4.5 0.89543 4.5 2L4.5 17C4.5 18.1046 3.60457 19 2.5 19C1.39543 19 0.500001 18.1046 0.500001 17L0.5 2C0.5 0.895431 1.39543 1.35705e-07 2.5 8.74229e-08Z" fill="#D3B166"></path>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M9.5 8.74229e-08C10.6046 3.91406e-08 11.5 0.89543 11.5 2L11.5 17C11.5 18.1046 10.6046 19 9.5 19C8.39543 19 7.5 18.1046 7.5 17L7.5 2C7.5 0.895431 8.39543 1.35705e-07 9.5 8.74229e-08Z" fill="#D3B166"></path>
+                                </svg>
+                            </div>
+    
+                            <div class="wave-wrap" style="width: 0px;">
+                                <!-- texts -->
+                                <div class="ww-inner">
+                                    <div class="w-title fw-500">Retention</div>
+                                </div>
+                                <!-- wave -->
+                                <div class="wave">
+                                    <div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0018);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0032);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0177);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.6404);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.5854);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.492);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0038);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.4068);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.5718);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0058);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.83);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.023);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.6769);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0.0381);"></div><div style="translate: none; rotate: none; scale: none; transform: translate3d(0px, 0px, 0px) scale(1, 0);"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="subtitle-wrap">
+                <div class="subtitle-frame" data-stagger-speed="0.42" data-audio-url="https://quantumstretch.com/wp-content/uploads/2023/09/puncture-1.mp3">
+                    <div class="subtitle fw-500"> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words"> With</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">relentless</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">puncture</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">resistance,</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">Quantum</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">withstands</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">even</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">the</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">most</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">challenging</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">conditions.</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">Whether</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">it's</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">pointed</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">objects,</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">rough</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">handling,</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">or</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">external</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">pressures,</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">the</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">film</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">remains</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">intact,</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">ensuring</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">the</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">safety</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">and</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">integrity</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">of</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">the</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">products</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">within.</div> </div>
+                </div>
+                <div class="subtitle-frame" data-stagger-speed="0.36" data-audio-url="https://quantumstretch.com/wp-content/uploads/2023/09/stretching-1.mp3" style="display: none; opacity: 0;">
+                    <div class="subtitle fw-500"> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words"> Our</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">Quantum</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">film</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">has</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">unprecedented</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">elasticity,</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">allowing</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">it</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">to</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">stretch</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">further</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">without</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">tearing.</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">This</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">means</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">a</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">more</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">versatile</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">wrap</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">for</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">products</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">of</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">varied</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">sizes</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">and</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">shapes,</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">and</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">reduced</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">material</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">usage</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">as</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">fewer</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">wraps</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">are</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">needed</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">to</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">secure</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">the</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">same</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">amount</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">of</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">product.</div> </div>
+                </div>
+                <div class="subtitle-frame" data-stagger-speed="0.36" data-audio-url="https://quantumstretch.com/wp-content/uploads/2023/09/cling-1.mp3" style="display: none; opacity: 0;">
+                    <div class="subtitle fw-500"> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words"> Quantum's</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">enhanced</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">cling</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">formula</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">ensures</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">that</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">it</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">adheres</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">even</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">more</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">securely,</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">reducing</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">the</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">risk</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">of</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">unwrapping</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">or</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">slackening</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">during</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">transport</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">or</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">storage.</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">The</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">stability</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">and</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">the</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">safety</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">of</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">your</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">products</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">has</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">never</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">been</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">greater.</div> </div>
+                </div>
+                <div class="subtitle-frame" data-stagger-speed="0.34" data-audio-url="https://quantumstretch.com/wp-content/uploads/2023/09/retention-2.mp3" style="display: none; opacity: 0;">
+                    <div class="subtitle fw-500"> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words"> No</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">one</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">holds</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">like</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">Quantum.</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">Products</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">are</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">guaranteed</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">a</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">lasting</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">hold,</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">ensuring</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">that</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">they</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">remain</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">tightly</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">bundled</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">for</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">extended</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">periods</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">of</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">time.</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">Long-term</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">storage</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">or</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">lengthy</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">transit</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">times</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">have</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">never</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">been</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">as</div> <div style="position: relative; display: inline-block; opacity: 0.2;" class="split-words">tranquil.</div> </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- webgl scene -->
+        <div class="three-background"><canvas data-engine="three.js r154" width="1920" height="923" style="display: block; width: 1536px; height: 739px; touch-action: none;"></canvas></div>
+
+
+        <!-- page content -->
+        <div id="smooth-wrapper" style="inset: 0px; width: 100%; height: 100%; position: fixed; overflow: hidden;">
+            <div id="smooth-content" style="translate: none; rotate: none; scale: none; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); box-sizing: border-box; width: 100%; overflow: visible;">
+                <!-- Header -->
+                <header class="header"></header>
+<!-- camera timeline track -->
+<div class="camera-track" data-method="three">
+    <!-- home hero section -->
+
+    
+        <section class="home-hero-section block relative">
+        <div class="aligner">
+            <div class="container">
+                <h1 class="title fw-400 switch-trigger intro-title" data-stagger-speed="0.45" data-audio-url="https://quantumstretch.com/wp-content/uploads/2023/09/intro.mp3"> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words"> Discover</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">Quantum,</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">revolutionizing</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">the</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">packaging</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">industry</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">with</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">unparalleled</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">elasticity</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">and</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">durability.</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">Where</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">traditional</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">wraps</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">falter,</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">Quantum</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">stands</div> <div style="position: relative; display: inline-block; opacity: 1;" class="split-words">firm.</div> </h1>
+            </div>
+        </div>
+    </section>
+        
+    
+        <!-- strong film section -->
+    <section class="strong-film-section block relative">
+        <div class="container">
+                        <h2 id="performanceAnchor" class="title fw-400 switch-trigger inited" data-scrub-title-reveal="" style=""><div class="split-lines" style="display: block; text-align: center; position: relative; translate: none; rotate: none; scale: none; opacity: 0; transform: translate(8%, 60%) skew(0deg, -2deg);"> Strong film </div><div class="split-lines" style="display: block; text-align: center; position: relative; translate: none; rotate: none; scale: none; opacity: 0; transform: translate(8%, 60%) skew(0deg, -2deg);">performance </div></h2>
+                            
+                        <h4 class="subtitle fw-400 inited" data-scrub-title-reveal="" style=""><div class="split-lines" style="display: block; text-align: center; position: relative; translate: none; rotate: none; scale: none; opacity: 0; transform: translate(8%, 60%) skew(0deg, -2deg);"> In the world of packaging, every detail counts. Quantum emerges at the </div><div class="split-lines" style="display: block; text-align: center; position: relative; translate: none; rotate: none; scale: none; opacity: 0; transform: translate(8%, 60%) skew(0deg, -2deg);">intersection of innovation and necessity, designed for those who seek the best. </div></h4>
+                        
+                        <div class="texts-frame inited" data-stagger-reveal="">
+                <div class="text fw-500" data-stagger-piece="" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(15%, 10%);">
+                    Traditional wraps have set a standard; Quantum redefines it. Every inch is engineered for optimal performance, embracing products with unmatched resilience. While many films promise protection, Quantum delivers it consistently, adapting to diverse challenges with grace and tenacity.                </div>
+    
+                <div class="text fw-500" data-stagger-piece="" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(15%, 10%);">
+                    Beyond just wrapping, Quantum is a testament to advanced material science. Its properties, meticulously enhanced, work in harmony to safeguard every package. From the initial stretch to long-term retention, experience the peace of mind that only Quantum's superior design can provide.                </div>
+            </div>
+                    </div>
+                
+    
+                <!-- stats frame -->
+        <div class="stats-frame inited" data-stagger-reveal="">
+            
+                                    <div class="sf-inner">
+                <div class="stat-card" data-stagger-piece="" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(15%, 10%);">
+                    <div class="circle-frame" data-method="initCircle" data-value="0.3">
+                        <div class="circle"><canvas width="312" height="312" style="height: 250px; width: 250px;"></canvas></div>
+
+                        <div class="number">0%</div>
+                        <div class="line"></div>
+                    </div>
+    
+                    <div class="card-title fw-500">
+                        Quantum 30% less CO2                    </div>
+                    <div class="card-text fw-500">
+                        Quantum is the only stretch film that is produced by leveraging at least 30% of renewable energy-sources through our own solar power plant, effectively cutting the CO2 emissions by 30%. Enjoy the benefits of an effective and an eco-conscious product.                    </div>
+                </div>
+            </div>
+                                    <div class="sf-inner">
+                <div class="stat-card" data-stagger-piece="" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(15%, 10%);">
+                    <div class="circle-frame" data-method="initCircle" data-value="1.0">
+                        <div class="circle"><canvas width="312" height="312" style="height: 250px; width: 250px;"></canvas></div>
+
+                        <div class="number">0%</div>
+                        <div class="line"></div>
+                    </div>
+    
+                    <div class="card-title fw-500">
+                        Retention force over 100%                    </div>
+                    <div class="card-text fw-500">
+                        Quantum Stretch Film boasts a remarkable over 100% stronger holding force, guaranteeing secure shipping and intact deliveries, saving you costs and ensuring peace of mind.                    </div>
+                </div>
+            </div>
+                                    <div class="sf-inner">
+                <div class="stat-card" data-stagger-piece="" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(15%, 10%);">
+                    <div class="circle-frame" data-method="initCircle" data-value="1.0">
+                        <div class="circle"><canvas width="312" height="312" style="height: 250px; width: 250px;"></canvas></div>
+
+                        <div class="number">0%</div>
+                        <div class="line"></div>
+                    </div>
+    
+                    <div class="card-title fw-500">
+                        100% recyclability                    </div>
+                    <div class="card-text fw-500">
+                        Quantum Stretch Film offers 100% recyclability without sacrificing quality or protection. Make an eco-conscious choice for both your goods and the environment, ensuring top-tier security.                    </div>
+                </div>
+            </div>
+                
+        </div>
+            </section>
+    
+    <!-- new technology section -->
+    <section class="new-technology-section block relative">
+                    <h4 id="technologyAnchor" class="title fw-400 switch-trigger inited" data-scrub-title-reveal="" style=""><div class="split-lines" style="display: block; text-align: center; position: relative; translate: none; rotate: none; scale: none; opacity: 0; transform: translate(8%, 60%) skew(0deg, -2deg);">New Technology</div></h4>
+        
+            
+        <!-- flying cards -->
+        <div class="flying-cards relative inited" data-stagger-reveal="">
+
+                                    <!-- card -->
+            <div class="card" data-stagger-piece="" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(15%, 10%);">
+                <div class="c-head">
+                    <div class="c-title fw-400">Stretch test</div>
+                </div>
+    
+                <div class="c-body">
+                    <div class="c-text fw-500">
+                        Quantum's elasticity truly stands out. Designed to stretch further without breaking, it most-efficiently wraps diverse shapes, ensuring minimal waste and optimal coverage.                    </div>
+                </div>
+            </div>
+                                    <!-- card -->
+            <div class="card" data-stagger-piece="" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(15%, 10%);">
+                <div class="c-head">
+                    <div class="c-title fw-400">Puncture resistance</div>
+                </div>
+    
+                <div class="c-body">
+                    <div class="c-text fw-500">
+                        Quantum defies typical wrap vulnerabilities. Its heightened puncture resistance guards against the sharpest challenges, ensuring unwavering protection in the roughest conditions.                    </div>
+                </div>
+            </div>
+                                    <!-- card -->
+            <div class="card" data-stagger-piece="" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(15%, 10%);">
+                <div class="c-head">
+                    <div class="c-title fw-400">Cling test</div>
+                </div>
+    
+                <div class="c-body">
+                    <div class="c-text fw-500">
+                        In the realm of cling, Quantum excels. Its advanced adhesion ensures the wrap remains securely in place, maintaining product stability from start to finish.                    </div>
+                </div>
+            </div>
+                                    <!-- card -->
+            <div class="card" data-stagger-piece="" style="translate: none; rotate: none; scale: none; opacity: 0; transform: translate(15%, 10%);">
+                <div class="c-head">
+                    <div class="c-title fw-400">Retention</div>
+                </div>
+    
+                <div class="c-body">
+                    <div class="c-text fw-500">
+                        Longevity is at Quantum's core. Its superior retention means packages stay tightly bound, reducing risks of shifting or potential damage during transit.                    </div>
+                </div>
+            </div>
+                
+        </div>
+            </section>
+    
+    
+    
+    <!-- switch section -->
+    <section id="specificationAnchor" class="switch-section puncture block relative">
+        <div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: block; margin: 0px; inset: 0px 0px 5174.4px; position: absolute; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 1536px; height: 5914px; padding: 0px 0px 5175px;"><div class="aligner" style="translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 1536px; width: 1536px; max-height: 739.2px; height: 739.2px; padding: 0px; transform: translate(0px, 0px);">
+            <!-- panel -->
+            <div class="panel" style="translate: none; rotate: none; scale: none; display: block; transform: translate(0px, 0%);">
+                <div class="container">
+                    <div class="title-wrap">
+                        
+                    <h4 class="title fw-400 switch-trigger" style="translate: none; rotate: none; scale: none; transform: translate(0px, 0%);">Puncture resistance</h4></div>
+                </div>
+            </div>
+    
+            <!-- panel -->
+            <div class="panel" style="translate: none; rotate: none; scale: none; opacity: 0; display: none; transform: translate(0px, 120%);">
+                <div class="container">
+                    
+                <h4 class="title fw-400 switch-trigger" style="translate: none; rotate: none; scale: none; transform: translate(0px, -100%);">Stretch up</h4></div>
+            </div>
+    
+            <!-- panel -->
+            <div class="panel" style="translate: none; rotate: none; scale: none; opacity: 0; display: none; transform: translate(0px, 120%);">
+                <div class="container">
+                    
+                <h4 class="title fw-400 switch-trigger" style="translate: none; rotate: none; scale: none; transform: translate(0px, -100%);">Cling increase</h4></div>
+            </div>
+    
+            <!-- panel -->
+            <div class="panel" style="translate: none; rotate: none; scale: none; opacity: 0; display: none; transform: translate(0px, 120%);">
+                <div class="container">
+                    
+                <h4 class="title fw-400 switch-trigger" style="translate: none; rotate: none; scale: none; transform: translate(0px, -100%);">Retention</h4></div>
+            </div>
+        </div></div>
+    </section>
+
+    
+    
+    <!-- cylinders-camera-track -->
+    <div class="cylinders-camera-track">
+        <!-- pdf section -->
+        <section class="pdf-section block relative">
+            <div class="track">
+                <div class="pin-spacer" style="order: 0; place-self: auto; grid-area: auto / auto / auto / auto; z-index: auto; float: none; flex-shrink: 1; display: flex; margin: 0px; inset: auto; position: relative; flex-basis: auto; overflow: visible; box-sizing: border-box; width: 1536px; height: 739px; padding: 0px;"><div class="aligner" style="translate: none; rotate: none; scale: none; inset: 0px auto auto 0px; margin: 0px; max-width: 1536px; width: 1536px; max-height: 739.2px; height: 739.2px; padding: 84.48px 0px; transform: translate(0px, 0px);">
+                    <div class="container" data-method="sectionAnchors" style="opacity: 0;">
+                        <a href="https://quantumstretch.com/#contactAnchor" class="panel anchor">
+                            <div class="label fw-500">Contact us for</div>
+            
+                            <h4 class="title fw-400">
+                                Technical Specification                            </h4>
+                                                    </a>
+                    </div>
+                </div></div>
+            </div>
+        </section>
+        
+    
+    
+        <!-- contact section -->
+        <section class="contact-section block relative">
+            <div class="aligner">
+                <div class="container">
+                    <!-- title wrap -->
+                    <div id="contactAnchor" class="title-wrap">
+                                                    <h4 class="title fw-400">Contact</h4>
+                                                
+                                                <div class="subtitle fw-500">
+                            Don't miss the opportunity to elevate your packaging process with Quantum film. Fill out the contact form and discover how we can meet your specific needs!                        </div>
+                                            </div>
+    
+                    <!-- form -->
+                    <div class="form" data-method="sendContactForm">
+                        <form autocomplete="off" action="https://quantumstretch.com/POST" id="contact-section-form" class="contact-section-form-content block relative">
+                            <div class="contact-form-row">
+                                <div class="form-row-left-column">
+                                    <div class="form-field form-field-validate">
+                                        <label for="your-name">Name</label>
+                                        <input class="input-for-form-field required-field" type="text" id="your-name" name="your-name" placeholder="Your name" autocomplete="off">
+                                    </div>
+                                    <div class="form-field form-field-validate">
+                                        <label for="your-organization">Organization</label>
+                                        <input class="input-for-form-field" type="text" id="your-organization" name="your-organization" placeholder="Your Organization" autocomplete="off">
+                                    </div>
+                                    <div class="form-field form-field-validate">
+                                        <label for="your-email-address">E-mail Address</label>
+                                        <input class="input-for-form-field required-field" type="email" id="your-email-address" name="your-email-address" placeholder="E-mail Address" autocomplete="off">
+                                    </div>
+                                </div>
+                                <div class="form-row-right-column">
+                                    <div class="form-field form-field-validate">
+                                        <label for="your-message">Message</label>
+                                        <textarea class="input-for-form-field required-field" name="your-message" id="your-message" placeholder="Your Message" cols="30" rows="4" autocomplete="off"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-row-left-column thank-you-message-column">
+                                    <p>Success! Your message has been sent</p>
+                                </div>
+                                <div class="form-row-right-column">
+                                    <div class="form-field submit-field">
+                                        <button type="submit" class="submit-button">
+                                            <span>Send</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer" data-method="goTopControl">
+            <div class="container">
+                <!-- logo -->
+                <div class="logo-frame">
+                    <img src="./Quantum - Revolution in Packaging Industry_files/full-logo.svg" alt="quantum logo" class="logo">
+                </div>
+
+                <!-- claim -->
+                <div class="claim fw-500">
+                    All rights reserved © Bomark Pak Ltd. | Web development: <a href="https://redneck.media/" data-text="REDNECK" target="_blank"><span>REDNECK</span></a> | <a href="https://bomarkpackaging.com/gdpr/" data-text="Privacy Policy" target="_blank"><span>Privacy Policy</span></a>
+                    Frankopanska ulica 66B, 42230 Ludbreg, Croatia /T. <a href="tel:+38542405020" data-text="+385 42 40 50 20"><span>+385 42 40 50 20</span></a> / E <a href="mailto:info@bomarkpackaging.com" data-text="info@bomarkpackaging.com"><span>info@bomarkpackaging.com</span></a>                </div>
+            </div>
+
+            <a href="https://quantumstretch.com/#" class="go-top-anchor"></a>
+        </footer>
+    </div>
+</div>
+
+
+
+</div>
+</div>
+</div>
+
+<script id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/quantumstretch.com","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script data-minify="1" src="./Quantum - Revolution in Packaging Industry_files/jquery-3.6.0.min.js.download" id="jquery-js"></script>
+<script src="./Quantum - Revolution in Packaging Industry_files/gsap.min.js.download" id="gsap-js"></script>
+<script src="./Quantum - Revolution in Packaging Industry_files/SplitText.min.js.download" id="gsap-split-text-js"></script>
+<script src="./Quantum - Revolution in Packaging Industry_files/ScrollTrigger.min.js.download" id="scroll-trigger-js"></script>
+<script src="./Quantum - Revolution in Packaging Industry_files/ScrollToPlugin.min.js.download" id="scroll-to-js"></script>
+<script src="./Quantum - Revolution in Packaging Industry_files/ScrollSmoother.min.js.download" id="scroll-smoother-js"></script>
+<script data-minify="1" src="./Quantum - Revolution in Packaging Industry_files/sound.js.download" id="sounds-js"></script>
+<script src="./Quantum - Revolution in Packaging Industry_files/script.min.js.download" id="redneck-script-js"></script>
+<script data-minify="1" src="./Quantum - Revolution in Packaging Industry_files/pwaforwp-video.js.download" id="pwaforwp-video-js-js"></script>
+<script data-minify="1" src="./Quantum - Revolution in Packaging Industry_files/pwaforwp-download.js.download" id="pwaforwp-download-js-js"></script>
+<script data-minify="1" src="./Quantum - Revolution in Packaging Industry_files/pwa-register-sw.js.download" id="pwa-main-script-js"></script>
+
+
+
+
+
+
+</body></html>
